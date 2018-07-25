@@ -6,16 +6,16 @@ import About from './views/Game.vue'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/game',
-      name: 'game',
-      component: About
-    }
-  ]
+    routes: [
+        {
+            path: '/',
+            name: 'home',
+            component: Home
+        },
+        {
+            path: '/game',
+            name: 'game',
+            component: About
+        }
+    ]
 })

@@ -1,5 +1,17 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div id="game-container">
+    <Cookie />
   </div>
 </template>
+
+<script>
+
+  import Cookie from '@/components/Cookie.vue'
+
+  export default {
+      components: {
+          Cookie
+      }
+  }
+
+</script>
