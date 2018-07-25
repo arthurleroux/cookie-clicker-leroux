@@ -4,7 +4,7 @@
             {{ cookies }}
         </div>
         <div>
-            <img v-on:click="clickCookie" src="../assets/cookie.png">
+            <img v-on:click="clickCookie" src="../assets/img/cookie.png">
         </div>
     </section>
 </template>
@@ -15,7 +15,7 @@
         methods: {
             clickCookie (e) {
                 this.$store.commit('CLICK_COOKIE')
-            },
+            }
         },
         computed: {
             cookies: function () {
@@ -25,3 +25,9 @@
     }
 
 </script>
+
+<style>
+    .cookie-container {
+        width: 50%;
+    }
+</style>

@@ -7,10 +7,12 @@
 <script>
 
   import Cookie from '@/components/Cookie.vue'
+  import Shop from '@/components/Shop.vue'
 
   export default {
       components: {
-          Cookie
+          Cookie,
+          Shop
       }
   }
 
