@@ -1,7 +1,7 @@
 <template>
     <section class="cookie-container">
         <div class="score">
-            {{ cookies }}
+            {{ Math.round(cookies) }}
         </div>
         <div>
             <img v-on:click="clickCookie" src="../assets/img/cookie.png">

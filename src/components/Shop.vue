@@ -4,7 +4,7 @@
             <h4>{{ product.name }}</h4>
             <small>+{{ product.cookiePerSecond }} cookies/s</small>
             <div class="price">
-                <div :class="{'text-green': canBuy === true, 'text-red': canBuy === false }">Price : {{ product.price }} cookies</div>
+                <div :class="{'text-green': canBuy === true, 'text-red': canBuy === false }">Price : {{ Math.round(product.price) }} cookies</div>
             </div>
         </div>
         <div class="count" ref="count">
