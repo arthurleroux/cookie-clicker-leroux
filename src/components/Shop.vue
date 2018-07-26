@@ -1,13 +1,13 @@
 <template>
-    <div class="cursor" @click="buy">
-        <div>
+    <div class="cursor product" @click="buy">
+        <div class="product-name">
             <h4>{{ product.name }}</h4>
+        </div>
+        <div class="product-infos">
             <small>+{{ product.cookiePerSecond }} cookies/s</small>
             <div class="price">
                 <div :class="{'text-green': canBuy === true, 'text-red': canBuy === false }">Price : {{ Math.round(product.price) }} cookies</div>
             </div>
-        </div>
-        <div >
             <span>Purchased : {{ product.purchased }}</span>
         </div>
     </div>
@@ -47,4 +47,19 @@
     .text-red {
         color: red;
     }
+
+    .product {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .product-name {
+        width: 30%;
+    }
+
+    .product-infos {
+        text-align: left;
+    }
+
 </style>

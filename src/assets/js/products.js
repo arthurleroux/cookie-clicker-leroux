@@ -12,6 +12,27 @@ const products = [
         price: 100,
         cookiePerSecond: 5,
         purchased: 0
+    },
+    {
+        id: 3,
+        name: 'Farm',
+        price: 200,
+        cookiePerSecond: 25,
+        purchased: 0
+    },
+    {
+        id: 4,
+        name: 'Mine',
+        price: 400,
+        cookiePerSecond: 100,
+        purchased: 0
+    },
+    {
+        id: 5,
+        name: 'Factory',
+        price: 1000,
+        cookiePerSecond: 300,
+        purchased: 0
     }
 ]
 
