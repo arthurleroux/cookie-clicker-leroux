@@ -25,6 +25,9 @@ export default new Vuex.Store({
         CLICK_COOKIE (state) {
             state.cookies++
         },
+        ADD_COOKIES (state, { cookies }) {
+            state.cookies += cookies
+        }
     },
     actions: {
 

@@ -1,13 +1,13 @@
 <template>
-    <div class="store" @click="buy">
-        <div class="desc">
+    <div class="cursor" @click="buy">
+        <div>
             <h4>{{ product.name }}</h4>
             <small>+{{ product.cookiePerSecond }} cookies/s</small>
             <div class="price">
                 <div :class="{'text-green': canBuy === true, 'text-red': canBuy === false }">Price : {{ Math.round(product.price) }} cookies</div>
             </div>
         </div>
-        <div class="count" ref="count">
+        <div >
             <span>Purchased : {{ product.purchased }}</span>
         </div>
     </div>

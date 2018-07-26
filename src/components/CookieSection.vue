@@ -4,7 +4,7 @@
             {{ Math.round(cookies) }}
         </div>
         <div>
-            <img v-on:click="clickCookie" src="../assets/img/cookie.png">
+            <img class="cursor" v-on:click="clickCookie" src="../assets/img/cookie.png">
         </div>
     </section>
 </template>
