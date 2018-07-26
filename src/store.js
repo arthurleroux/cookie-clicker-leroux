@@ -11,6 +11,17 @@ export default new Vuex.Store({
         products: products
     },
     mutations: {
+        BUY_PRODUCT (state, { productId }) {
+            state.products = state.products.map(product => {
+                if (product.id === productId) {
+                    product.purchased++
+                    state.cookies -= product.price
+                    product.price = 1.22 * product.price
+                }
+
+                return product
+            })
+        },
         CLICK_COOKIE (state) {
             state.cookies++
         },
