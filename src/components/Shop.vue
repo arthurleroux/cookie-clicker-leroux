@@ -56,6 +56,8 @@
 
     .product-name {
         width: 30%;
+        text-align: right;
+        padding-right: 30px;
     }
 
     .product-infos {
