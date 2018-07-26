@@ -1,19 +1,27 @@
 <template>
   <div id="game-container">
-    <Cookie />
+    <CookieSection />
+    <ShopSection />
   </div>
 </template>
 
 <script>
 
-  import Cookie from '@/components/Cookie.vue'
-  import Shop from '@/components/Shop.vue'
+  import CookieSection from '@/components/CookieSection.vue'
+  import ShopSection from '@/components/ShopSection.vue'
 
   export default {
       components: {
-          Cookie,
-          Shop
+          CookieSection,
+          ShopSection
       }
   }
 
 </script>
+
+<style>
+    #game-container {
+        display: flex;
+        flex-direction: row;
+    }
+</style>

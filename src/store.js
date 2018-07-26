@@ -3,22 +3,7 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-const products = [
-    {
-        id: 1,
-        name: 'Cursor',
-        price: 30,
-        cookiePerSeconds: 1,
-        purchased: 0
-    },
-    {
-        id: 2,
-        name: 'Grandma',
-        price: 100,
-        cookiePerSeconds: 5,
-        purchased: 0
-    }
-]
+import products from '@/assets/js/products'
 
 export default new Vuex.Store({
     state: {
